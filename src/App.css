@@ -1,0 +1,17 @@
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#nav-bar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+}
+
+#HomeButton{
+  grid-column: 2 / 3;
+}
+
+#ShopButton{
+  grid-column: 4 / 5;
+}
