@@ -1,4 +1,4 @@
-import './App.css';
+import '../src/Styles/App.css';
 import RouteSwitch from './RouteSwitch';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className='App'>
       <div id='nav-bar'>
         <div id='HomeButton'>
-          <a href="http://localhost:3000/HomePage">Home</a>
+          <a href="http://localhost:3000">Home</a>
         </div>
         <div  id='ShopButton'>
         <a href="http://localhost:3000/ShopPage">Shop</a>

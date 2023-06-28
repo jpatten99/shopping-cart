@@ -1,0 +1,19 @@
+#HomePage-Container{
+  width: 100%;
+  height: 100%;
+}
+
+.image{
+  background-image: url("/home/joshua/repos/shopping-cart/public/img/HomePage-Background.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+#Welcome-Title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  -webkit-text-stroke: 1px red;
+}
