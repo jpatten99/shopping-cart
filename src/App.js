@@ -12,7 +12,9 @@ function App() {
         <a href="http://localhost:3000/ShopPage">Shop</a>
         </div>
       </div>
-    <RouteSwitch />
+      <div id='app-body'>
+        <RouteSwitch />
+      </div>
   </div>
   );
 }
