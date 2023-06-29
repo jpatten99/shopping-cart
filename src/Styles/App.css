@@ -11,8 +11,15 @@ a, a:hover, a:focus, a:active {
 
 #nav-bar{
   display: grid;
-  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
   background-color: black;
+  justify-content: center;
+}
+
+.nav-bar-gridItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #HomeButton{
@@ -21,6 +28,11 @@ a, a:hover, a:focus, a:active {
 }
 
 #ShopButton{
-  grid-column: 4 / 5;
+  grid-column: 6 / 7;
   color: white;
+}
+
+#ShoppingCart-Container{
+  color: white;
+  grid-column: 4 / 5;
 }

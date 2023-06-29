@@ -1,8 +1,41 @@
 .Product-Container{
 width: 250px;
-height: 250px;
+height: 350px;
+display: grid;
+grid-template-columns: 1fr 2fr 2fr 1fr;
+grid-template-rows: 1fr 5fr 1fr;
+}
+#Product-Title{
+grid-column: 2 / 4;
+grid-row: 1 / 2;
+display: flex;
+justify-content: center;
+background-color: black;
+color: white;
 }
 
 .Product-Img{
+  height: 150px;
+  width: 150px;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+#Product-input{
+  grid-column:2 / -2 ;
+  grid-row: 3 / 4;
+  text-align: center; 
+  height: 40%;
+}
+
+#decrement-button{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  height: 50%;
+}
+
+#increment-button{
+  grid-column: -2 / -1;
+  grid-row: 3 / 4;
   height: 50%;
 }
