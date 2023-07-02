@@ -1,0 +1,10 @@
+.ShoppingCart-Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5{
+  margin: 5px;
+}

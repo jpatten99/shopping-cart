@@ -5,4 +5,6 @@
   display: grid;
   display: flex;
   justify-content: space-between;
+  background-image: url("/home/joshua/repos/shopping-cart/public/img/HomePage-Background.jpg");
+  background-size: contain;
 }

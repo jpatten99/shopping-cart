@@ -31,11 +31,20 @@ function Product(props) {
   }
   return (
     <div className="Product-Container">
-      <h4 id="Product-Title">{props.Title}</h4>
-      <img src={props.src}alt="Product" className="Product-Img"></img>
-      <button className="decrement-button" onClick={decrement} id={props.myid}>-</button>
-      <input type="text" placeholder="0" className="Product-input" id={`input${props.myid}`}></input>
-      <button className="increment-button" onClick={increment} id={props.myid}>+</button>
+      <div id="product-title-container">
+        <h5 id="Product-Title">{props.Title}</h5>
+      </div>
+      <div id="product-img-container">
+        <img src={props.src}alt="Product" className="Product-Img"></img>
+      </div>
+      <div id="product-buttonBar-container">
+        <button className="decrement-button" onClick={decrement} id={props.myid}>-</button>
+        <input type="text" placeholder="0" className="Product-input" id={`input${props.myid}`}></input>
+        <button className="increment-button" onClick={increment} id={props.myid}>+</button>
+      </div>
+      <div id="product-addToCart-container">
+        <button className="addToCart-button">Add to cart</button>
+      </div>
     </div>
   )
 }
