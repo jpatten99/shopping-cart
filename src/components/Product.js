@@ -18,10 +18,9 @@ function Product(props) {
   }
 
   function increment(e) {
+    console.log(props.cost)
     let self = e.target
-    //console.log(self)
     let target = document.getElementById(`input${self.id}`)
-    console.log(target.value)
     if(isNaN(target.value)) {
       target.value = 0
     }
@@ -29,6 +28,7 @@ function Product(props) {
       target.value ++
     }
   }
+
   return (
     <div className="Product-Container">
       <div id="product-title-container">
@@ -43,7 +43,10 @@ function Product(props) {
         <button className="increment-button" onClick={increment} id={props.myid}>+</button>
       </div>
       <div id="product-addToCart-container">
-        <button className="addToCart-button">Add to cart</button>
+        <button className="addToCart-button" onClick={()=>{
+          console.log(document.getElementById(`input${props.myid}`).value)
+          props.stateItemsChanger(document.getElementById(`input${props.myid}`).value)
+        }}>Add to cart</button>
       </div>
     </div>
   )
