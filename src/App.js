@@ -4,13 +4,28 @@ import ShoppingCart from './components/ShoppingCart';
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [NumberOfItems, setNumberOfItems] = useState(0);
-  const [TotalCost, setTotalCost] = useState(0);
+  const [NumberOfItems, setNumberOfItems] = useState((localStorage.getItem("items")) === null ? 0 : parseInt((localStorage.getItem("items"))));
+  const [TotalCost, setTotalCost] = useState((localStorage.getItem('cost')) === null ? 0 : parseInt(localStorage.getItem('cost')));
 
   function setNumber(input){
+    if(isNaN(parseInt(input)) || parseInt(input) < 1){
+      return
+    }
     setNumberOfItems(NumberOfItems + parseInt(input))
-    console.log("test")
   }
+
+  function setTotal(input){
+    if(isNaN(parseInt(input)) || parseInt(input) < 1){
+      return
+    }
+    setTotalCost(TotalCost + parseInt(input))
+  }
+
+  useEffect(()=>{
+    localStorage.setItem('items', NumberOfItems)
+    localStorage.setItem('cost', TotalCost)
+  },[NumberOfItems, TotalCost]);
+
   return (
     <div className='App'>
       <div id='nav-bar'>
@@ -25,7 +40,7 @@ function App() {
         </div>
       </div>
       <div id='app-body'>
-        <RouteSwitch stateItemsChanger = {setNumber} stateCostChanger = {setTotalCost}/>
+        <RouteSwitch stateItemsChanger = {setNumber} stateCostChanger = {setTotal}/>
       </div>
   </div>
   );

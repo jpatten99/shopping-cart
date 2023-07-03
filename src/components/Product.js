@@ -39,13 +39,15 @@ function Product(props) {
       </div>
       <div id="product-buttonBar-container">
         <button className="decrement-button" onClick={decrement} id={props.myid}>-</button>
-        <input type="text" placeholder="0" className="Product-input" id={`input${props.myid}`}></input>
+        <input type="number" placeholder="0" className="Product-input" id={`input${props.myid}`}></input>
         <button className="increment-button" onClick={increment} id={props.myid}>+</button>
       </div>
       <div id="product-addToCart-container">
         <button className="addToCart-button" onClick={()=>{
-          console.log(document.getElementById(`input${props.myid}`).value)
-          props.stateItemsChanger(document.getElementById(`input${props.myid}`).value)
+          let target = document.getElementById(`input${props.myid}`)
+          props.stateItemsChanger(target.value)
+          props.stateCostChanger(props.cost * target.value)
+          target.value = 0
         }}>Add to cart</button>
       </div>
     </div>
