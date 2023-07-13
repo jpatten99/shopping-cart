@@ -8,7 +8,7 @@ const RouteSwitch = (props) => {
     <HashRouter>
       <Routes>
         <Route path="/#" element={<HomePage/>} />
-        <Route path="/#/ShopPage" element={<ShopPage stateItemsChanger = {props.stateItemsChanger} stateCostChanger = {props.stateCostChanger} />} />
+        <Route path="/ShopPage" element={<ShopPage stateItemsChanger = {props.stateItemsChanger} stateCostChanger = {props.stateCostChanger} />} />
       </Routes>
     </HashRouter>
   );
