@@ -30,7 +30,7 @@ function App() {
     <div className='App'>
       <div id='nav-bar'>
         <div id='HomeButton' className='nav-bar-gridItem'>
-          <a href="http://localhost:3000">Home</a>
+          <a href="">Home</a>
         </div>
         <div id='ShoppingCart-Container' className='nav-bar-gridItem'>
           <ShoppingCart NumberOfItems = {NumberOfItems} TotalCost = {TotalCost} />
