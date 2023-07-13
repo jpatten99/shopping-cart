@@ -30,13 +30,14 @@ function App() {
     <div className='App'>
       <div id='nav-bar'>
         <div id='HomeButton' className='nav-bar-gridItem'>
-          <a href="">Home</a>
+          <a href="/#/">Home</a>
         </div>
         <div id='ShoppingCart-Container' className='nav-bar-gridItem'>
           <ShoppingCart NumberOfItems = {NumberOfItems} TotalCost = {TotalCost} />
         </div>
         <div  id='ShopButton' className='nav-bar-gridItem'>
-        <a href="http://localhost:3000/ShopPage">Shop</a>
+        {/* <a href="http://localhost:3000/ShopPage">Shop</a> */}
+        <a href="/#/ShopPage">Shop</a>
         </div>
       </div>
       <div id='app-body'>
