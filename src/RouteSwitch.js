@@ -7,7 +7,7 @@ const RouteSwitch = (props) => {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
+        <Route path="/Homepage" element={<HomePage/>} />
         <Route path="/ShopPage" element={<ShopPage stateItemsChanger = {props.stateItemsChanger} stateCostChanger = {props.stateCostChanger} />} />
       </Routes>
     </HashRouter>
