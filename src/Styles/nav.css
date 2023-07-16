@@ -1,0 +1,25 @@
+.navpop{
+display: flex;
+justify-content: space-evenly;
+}
+
+.navpop2{
+  width: 100%;
+  }
+
+  .nav-links-wrapper{
+    background-color: black;
+    color:white;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  ul{
+    list-style-type: none;  
+  }
+  .nav-link{
+    text-decoration: none;
+  }
