@@ -1,1 +1,1 @@
-This won't be hosted on GitHub Pages for the time being, use npm start to view locally.
+GH Pages should work for this project now, images may load a bit slowly on the shop page. Thanks for checking this out!
